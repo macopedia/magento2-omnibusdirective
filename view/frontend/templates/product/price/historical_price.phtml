@@ -1,0 +1,18 @@
+<?php
+
+/** @var \Macopedia\OmnibusDirective\Pricing\Render\HistoricalPriceBox $block */
+
+/** @var \Magento\Framework\Pricing\Price\PriceInterface $priceModel */
+$priceModel = $block->getPriceType('historical_price');
+
+/** @var \Macopedia\OmnibusDirective\ViewModel\OmnibusDirective $viewModel */
+$viewModel = $block->getViewModel();
+?>
+
+<?php if ($viewModel->isHistoricalPriceActive() && $block->canShowPrice()) :?>
+    <?= /* @noEscape */ $block->renderAmount($priceModel->getCustomAmount($priceModel->getValue()), [
+        'display_label'     => __('The lowest price in the last 30 days:'),
+        'price_id'          => $block->getPriceId('product-price-'),
+        'include_container' => true
+    ]); ?>
+<?php endif; ?>

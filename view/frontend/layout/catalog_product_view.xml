@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+		<referenceContainer name="product.info.price">
+            <block class="Magento\Catalog\Pricing\Render" name="product.price.historical" after="product.info.sku">
+                <arguments>
+                    <argument name="price_render" xsi:type="string">product.price.render.default</argument>
+                    <argument name="price_type_code" xsi:type="string">historical_price</argument>
+                    <argument name="zone" xsi:type="string">item_view</argument>
+                    <argument name="view_model" xsi:type="object">Macopedia\OmnibusDirective\ViewModel\OmnibusDirective</argument>
+                </arguments>
+            </block>
+		</referenceContainer>
+
+        <referenceBlock name="product.review.form">
+            <arguments>
+                <argument name="template" xsi:type="string">Macopedia_OmnibusDirective::review/form.phtml</argument>
+                <argument name="view_model" xsi:type="object">Macopedia\OmnibusDirective\ViewModel\OmnibusDirective</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

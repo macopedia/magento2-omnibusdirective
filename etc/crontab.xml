@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job name="macopedia_omnibusdirective_cleanup_historical_prices" instance="Macopedia\OmnibusDirective\Cron\CleanupHistoricalPrices" method="execute">
+			<schedule>50 0 * * *</schedule>
+		</job>
+	</group>
+</config>

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="macopedia" sortOrder="10" translate="label">
+            <label>Macopedia</label>
+        </tab>
+        <section id="omnibus_directive" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+            <label>Omnibus directive</label>
+            <tab>macopedia</tab>
+            <resource>Macopedia_OmnibusDirective::config_macopedia_omnibusdirective</resource>
+            <group id="historical_prices" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label">
+                <label>Historical prices</label>
+                <field id="active" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+                    <label>Enable historical prices</label>
+                    <comment>Enable historical price render on product view, auto calculation of historical price and cleanup historical prices after 30 days</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="validate_review" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="20" translate="label">
+                <label>Validate review</label>
+                <field id="active" showInDefault="1" showInStore="0" showInWebsite="0" sortOrder="10" translate="label" type="select">
+                    <label>Enable validate review</label>
+                    <comment>Add "Order number" field to product review form and enable product review validation by order number</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

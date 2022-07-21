@@ -1,0 +1,22 @@
+{
+    "name": "macopedia/module-omnibusdirective",
+    "description": "Implementation of EU Omnibus Directive for Magento 2",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Jakub Idziak",
+            "email": "j.idziak@macopedia.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Macopedia\\OmnibusDirective\\": ""
+        }
+    }
+}
