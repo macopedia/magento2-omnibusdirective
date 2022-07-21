@@ -51,7 +51,7 @@ Enable module and install patches:
 ```
 
 
-Notice - if you have custom theme and modified review form template file `Magento_Review/templates/form.phtml` you have to add manually `order_number` input (see example in file `view/frontend/templates/review/form.phtml`):
+Notice - if you have custom theme and modified review form template file `Magento_Review/templates/form.phtml` you have to add manually `order_id` input (see example in file `view/frontend/templates/review/form.phtml`):
 
 ```html
 <div class="field review-field-order-id required">
