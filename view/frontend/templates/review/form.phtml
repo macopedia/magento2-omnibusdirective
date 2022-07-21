@@ -70,7 +70,7 @@ $viewModel = $block->getViewModel();
                      * Custom theme - if you want to use order number validation in reviews please copy field 'Order number' to your theme phtml 'app/design/frontend/{{VENDOR}}/{{THEME}}/Magento_Review/templates/form.phtml'
                      */
                     ?>
-                    <?php if ($viewModel->isValidateReviewActive()) : ?>
+                    <?php if ($viewModel->isValidateReviewActive()): ?>
                         <div class="field review-field-order-id required">
                             <label for="order_id_field" class="label"><span><?= $block->escapeHtml(__('Order number')) ?></span></label>
                             <div class="control">

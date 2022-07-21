@@ -47,7 +47,8 @@ class AfterValidate
         $productId = $this->request->getParam('id');
         if (empty($orderId) || !$this->orderedProduct->validateProductOrdered($productId, $orderId)) {
             $result = [];
-            $result[] = (__('This product was not purchased with this order. Please check your order number and try again.'));
+            $result[] =
+                __('This product was not purchased with this order. Please check your order number and try again.');
         }
 
         return $result;

@@ -127,4 +127,3 @@ class AddHistoricalPriceProductAttributes implements DataPatchInterface, PatchRe
         ];
     }
 }
-

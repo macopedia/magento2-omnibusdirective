@@ -41,8 +41,7 @@ class HistoricalPrice
         ProductRepositoryInterface $productRepository,
         FilterBuilder $filterBuilder,
         SearchCriteriaBuilder $searchCriteriaBuilder
-    )
-    {
+    ) {
         $this->date = $date;
         $this->productRepository = $productRepository;
         $this->filterBuilder = $filterBuilder;

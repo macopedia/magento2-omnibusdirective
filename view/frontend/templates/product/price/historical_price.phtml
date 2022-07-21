@@ -9,7 +9,7 @@ $priceModel = $block->getPriceType('historical_price');
 $viewModel = $block->getViewModel();
 ?>
 
-<?php if ($viewModel->isHistoricalPriceActive() && $block->canShowPrice()) :?>
+<?php if ($viewModel->isHistoricalPriceActive() && $block->canShowPrice()): ?>
     <?= /* @noEscape */ $block->renderAmount($priceModel->getCustomAmount($priceModel->getValue()), [
         'display_label'     => __('The lowest price in the last 30 days:'),
         'price_id'          => $block->getPriceId('product-price-'),
