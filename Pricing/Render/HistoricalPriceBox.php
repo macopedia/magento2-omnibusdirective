@@ -2,6 +2,7 @@
 
 namespace Macopedia\OmnibusDirective\Pricing\Render;
 
+use Magento\Catalog\Pricing\Price\FinalPrice;
 use Magento\Catalog\Pricing\Render\FinalPriceBox;
 
 class HistoricalPriceBox extends FinalPriceBox
@@ -10,6 +11,8 @@ class HistoricalPriceBox extends FinalPriceBox
     {
         $product = $this->getSaleableItem();
 
-        return (int) $product->getData('historical_price') > 0;
+        return (int) $product->getPriceInfo()->getPrice(FinalPrice::PRICE_CODE)->getValue()
+            > (int) $product->getData('historical_price')
+            && (int) $product->getData('historical_price') > 0;
     }
 }

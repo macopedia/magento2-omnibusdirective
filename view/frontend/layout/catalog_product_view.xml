@@ -13,8 +13,10 @@
 		</referenceContainer>
 
         <referenceBlock name="product.review.form">
-            <arguments>
+            <action method="setTemplate">
                 <argument name="template" xsi:type="string">Macopedia_OmnibusDirective::review/form.phtml</argument>
+            </action>
+            <arguments>
                 <argument name="view_model" xsi:type="object">Macopedia\OmnibusDirective\ViewModel\OmnibusDirective</argument>
             </arguments>
         </referenceBlock>
