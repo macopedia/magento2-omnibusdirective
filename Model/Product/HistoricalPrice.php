@@ -72,6 +72,11 @@ class HistoricalPrice
     public function getHistoricalPriceUpdateValue(array $origData, array $data): float
     {
         if (!empty($origData['special_price']) && empty($data['special_price'])
+            && $data['price'] > $origData['special_price']) {
+            return (float) $origData['special_price'];
+        }
+
+        if (!empty($origData['special_price']) && empty($data['special_price']) && !empty($origData['historical_price'])
             && $origData['special_price'] < $origData['historical_price']
             && $data['price'] > $origData['historical_price']) {
             return (float) $origData['special_price'];

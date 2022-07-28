@@ -25,6 +25,7 @@ Implementation of EU Omnibus Directive for Magento 2.
 
 ## Not implemented features
 
+- checking from / to special price date before remove special price value
 - calculate historical price after save by Rest API and Soap API
 - calculate historical price after product mass action update
 - keep all price changes from last 30 days
