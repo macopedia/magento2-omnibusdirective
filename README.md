@@ -86,3 +86,12 @@ $data =
     'price' => xxx
 ]
 ```
+
+## Screenshots
+### Historical price on product page
+
+![product-page-historical-price](https://user-images.githubusercontent.com/7571848/182821364-06fd096a-2c35-4398-9bfd-2971ab62b4e1.png)
+
+### Review validation by order number field
+
+![product-page-trusted-review](https://user-images.githubusercontent.com/7571848/182821384-b5a2d609-db29-4f88-a64a-05ecb59247af.png)
