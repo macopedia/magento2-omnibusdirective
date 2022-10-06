@@ -3,7 +3,6 @@
     "description": "Implementation of EU Omnibus Directive for Magento 2",
     "type": "magento2-module",
     "license": "GPL-3.0",
-    "version": "1.0.5",
     "authors": [
         {
             "name": "Jakub Idziak",
