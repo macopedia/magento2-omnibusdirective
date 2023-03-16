@@ -1,4 +1,4 @@
-# Macopedia OmnibusDirective module
+# Macopedia Magento 2 Omnibus Directive module
 
 Implementation of EU Omnibus Directive for Magento 2.
 
