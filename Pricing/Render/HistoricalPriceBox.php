@@ -46,7 +46,7 @@ class HistoricalPriceBox extends FinalPriceBox
     public function canShowPrice(): float
     {
         $product = $this->getSaleableItem();
-        $historicalPrice = $this->_priceHelper->currency($product->getData('historical_price', false, false));
+        $historicalPrice = $this->_priceHelper->currency($product->getData('historical_price'), false, false);
 
         return (int) $product->getPriceInfo()->getPrice(FinalPrice::PRICE_CODE)->getValue()
             > (int) $historicalPrice
