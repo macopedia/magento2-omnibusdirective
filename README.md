@@ -8,6 +8,14 @@ Implementation of EU Omnibus Directive for Magento 2.
  - [Installation](#installation)
  - [Prices import](#prices-import)
 
+</br>
+
+## :rocket: Update 07.03.2025
+
+The current version of the plugin is available for purchase <a href="https://commercemarketplace.adobe.com/macopedia-module-omnibusdirective.html" target="_blank"><strong>here</strong></a>.
+
+</br>
+
 ## Requirements
 
    Magento version > 2.4.x
