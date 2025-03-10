@@ -12,7 +12,7 @@ Implementation of EU Omnibus Directive for Magento 2.
 
 ## :rocket: Update 07.03.2025
 
-The current version of the plugin is available for purchase <a href="https://commercemarketplace.adobe.com/macopedia-module-omnibusdirective.html" target="_blank"><strong>here</strong></a>.
+The current version of the plugin is available for purchase on the <a href="https://commercemarketplace.adobe.com/macopedia-module-omnibusdirective.html" target="_blank"><strong>Magento Marketplace</strong></a>.
 
 </br>
 
